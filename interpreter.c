@@ -6,7 +6,7 @@
 #define Max_len 4 + 1
 int incrementer = 0;
 
-int main(void) {
+int main() {
     int line = 0;
     char data[Max_lines][Max_len];
 
@@ -36,6 +36,9 @@ int main(void) {
         if(strcmp(data[i], "glop") == 0){
             char asciiprint = incrementer;
             printf("%c", asciiprint);
+        }
+        if(strcmp(data[i], "plop") == 0){
+            printf("%s","\n");
         }
         
     }
